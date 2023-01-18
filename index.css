@@ -72,6 +72,7 @@
     color: green;
 }
 
+
 #btn {
     background-color: #0d6efd;
     border-radius: 10px;
@@ -264,6 +265,7 @@
     color: white;
     font-weight: bold;
     padding-left: 10px;
+    filter: brightness(0.5);
     transition: 1s;
 }
 
@@ -290,6 +292,7 @@
     color: white;
     font-weight: bold;
     padding-left: 20px;
+    filter: brightness(0.5);
     transition: 1s;
 
 }
@@ -320,12 +323,29 @@
     padding-left: 10px;
     transition: 1s;
     cursor: pointer;
+    filter: brightness(0.5);
 }
 
-.item1 .item2 .item3:hover {
-    transform: scale(1.4);
+.item1:hover {
+    transform: scale(1.1);
     z-index: 2;
+    filter: brightness(1);
 }
+
+.item2:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    filter: brightness(1);
+
+}
+
+.item3:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    filter: brightness(1);
+}
+
+
 
 
 /* Image And Write Part */
@@ -346,10 +366,9 @@
     margin-left: 5%;
 }
 
-.daba2 .hepa {
+.daba2 .hepa li {
     list-style-image: url('./logo/hep.png');
     margin-left: 12%;
-    /* background-color: #eee; */
     width: 80%;
 }
 
@@ -362,20 +381,20 @@
     font-size: 13px;
 }
 
-.house {
+.house li {
     list-style-image: url('./logo/house.png');
     margin-left: 12%;
     /* background-color: #eee; */
     width: 80%;
 }
 
-.book {
+.book li {
     list-style-image: url('./logo/book.png');
     margin-left: 12%;
     width: 80%;
 }
 
-.thar {
+.thar  li{
     list-style-image: url('./logo/thar.png');
     margin-left: 12%;
     width: 80%;
@@ -662,8 +681,8 @@ footer {
 
 /* .col :nth-child(2),
 :nth-child(3) {
-    /* flex-basis: 20%; */
- */
+    flex-basis: 20%;
+} */
 
 .col h2 {
     width: fit-content;
